@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item *ngFor="let input of inputs; let index = index">
+      <ion-label position="stacked">input{{index}}</ion-label>
+      <ion-input [name]="'input'+index"></ion-input>
+    </ion-item>
+  </form>
+</ion-content>
